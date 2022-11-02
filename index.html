@@ -233,7 +233,7 @@
                 <p>Delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us
                 out! Perfect materials and freshly baked food.</p>           
               
-              <form class="reservations_form form" id="reservForm" oninput="validate_form()">
+              <form class="reservations_form form" id="reservForm" oninput="create_form()">
                 <div class = "form_wrapper">
                   <div class="form_reservation">
                     <div class="form_column">
@@ -251,18 +251,14 @@
                     <div class="form_column">
                       <label class="form_label" for="email">Email</label>
                       <input class="form_field" id="email" type="email" placeholder="your email*" required>
-      
                       <label class="form_label" for="number">Party number</label>
                       <select class="form_field" id="number" required>
                         <option value="" disabled selected>party number</option>                      
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
+                        <option value="1">For 1</option>
+                        <option value="2">For 2</option>
+                        <option value="3">For 2 or more</option>
+                        <option value="4">VIP table</option>
+                        
                       </select>
                       
                     </div>
@@ -278,5 +274,48 @@
         
         </div>
       </section>
+      <div class="modal " id="modal-1">
+        <div class="modal__content">
+          <button class="modal__close-button"id="modal-close"><img src="img/crossing.png" width="18" alt=""></button>
+          <h1 class="modal__title">The table has been booked.</h1>
+          <img class="modal-divider"src="img/devider-gold.png">
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-page">
+      <div class="footer-about" id="info-footer">
+        <p class="footer-caption">About Us</p>
+        <img class="footer-img" src="img/footer-divider.png">
+        <p class="footer-text">Lambda's new and expanded Chelsea location represents a truly authenic <strong>Greek</strong> patisserie, featuring breakfasts of fresh croissants and steaming bowls of cafe.<br>Lambda the best restaurant in town</p> 
+      </div>
+      <div class="footer-worktime" id="info-footer">
+        <p class="footer-caption">Opening Hours</p>
+        <img class="footer-img" src="img/footer-divider.png">
+        <p class="footer-text"><strong>Mon-Thu:</strong> 7:00am-8:00pm<br><strong>Fri-Sun:</strong> 7:00am-10:00pm</p>
+        <div class="footer-icons-pay">
+          <i class="fa fa-cc-amex" aria-hidden="true"></i>
+          <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+          <i class="fa fa-cc-visa" aria-hidden="true"></i>
+          <i class="fa fa-cc-discover" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="footer-location" id="info-footer">
+        <p class="footer-caption">Our Location</p>
+        <img class="footer-img" src="img/footer-divider.png">
+        <p class="footer-text"><strong>19th Paradise Street Sitia</strong><br><strong>128 Meserole Avenue</strong></p>
+        <div class="footer-icons-socials">
+        <a class="socials-link2" href="https://facebook.com" target="_blank"><i
+            class="fa fa-facebook"></i></a>
+        <a class="socials-link2" href="https://www.youtube.com/" target="_blank"><i
+            class="fa fa-youtube"></i></a>
+        <a class="socials-link2" href="https://twitter.com" target="_blank"><i
+            class="fa fa-twitter"></i></a>
+        <a class="socials-link2" href="https://trello.com/ru" target="_blank"><i
+            class="fa fa-trello"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
