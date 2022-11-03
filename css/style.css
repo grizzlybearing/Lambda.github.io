@@ -38,7 +38,8 @@
     font-size: 36px;
     text-decoration: none;
     color: #fff;
-    display: flex;
+    margin-left: 175px;
+    margin-top: 30px;
     align-items: center;
 }
 
@@ -81,22 +82,28 @@
 }
 
 .header {
-    max-width: 1600px;
-    margin: auto;
-    width: 100%;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    
     height: 750px;
     display: flex;
-    background-image: url("../img/back.jpg");
+    background-image: url("../img/back1.png");
+    background-position: center;
     background-size: cover;
     justify-content: center;
+    color: #ffffff;
 }
+ 
+   
 
 .navbar {
     z-index: 10;
     display: flex;
     justify-content: space-between;
+    
     position: fixed;
-    width: 100%;
+    width: 1600px;
     height: 110px;
     padding: 0 175px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 20%, rgba(255, 255, 255, 0) 100%);
@@ -204,15 +211,16 @@
 .about{
     padding-top: 55px;
     padding-bottom: 30px;
-   
-    max-width: 1600px;
-    margin: auto;
-    width: 100%;
-    height: 710px;
-    display: run-in;
-    background-image: url("../img/about_back.png");
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-position: center;
     background-size: cover;
-   
+    justify-content: center;
+    color: #ffffff;
+    height: 710px;
+    background-image: url("../img/about_back.png");
 }
 
 .container{
@@ -304,13 +312,16 @@
 .ingredients{
     padding-top: 100px;
     padding-bottom: 101px;
-    max-width: 1600px;
-    margin: auto;
-    width: 100%;
-    height: 758px;
-    display: run-in;
-    background-image: url("../img/ingr_back.png");
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-position: center;
     background-size: cover;
+    justify-content: center;
+    color: #ffffff;
+    height: 758px;
+    background-image: url("../img/ingr_back.png");
 }
 
 .ingredients-content{
@@ -395,7 +406,7 @@
     height: 815px;
     width: 1170px;
     margin:auto;
-    margin-top:93px;
+    margin-top:70px;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -781,7 +792,7 @@ border: 1px solid #c9a131;
 }
 .footer-img{
     width: 280px;
-    margin-top: -35px;
+    margin-top: -25px;
 }
 .footer-caption{
     font-family: YesevaOne;
